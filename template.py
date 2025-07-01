@@ -2,7 +2,8 @@ import os.path
 from pathlib import Path
 
 list_of_files = [
-    ".github/workflows",
+    ".github/workflows/ci.yml",
+    ".github/workflows/python-publish.yaml",
     "src/__init__.py",
     "src/mongodb-connect.py",
     "experiment/__init__.py",
