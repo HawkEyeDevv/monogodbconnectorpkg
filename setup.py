@@ -38,20 +38,4 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires=[
-        'pymongo[srv]',
-        'dnspython',
-        'pandas',
-        'numpy',
-        'ensure',
-    ],
-    extras_require={
-        'dev': [
-            'pytest',
-            'tox',
-            'black',
-            'flake8',
-            'mypy',
-        ],
-    }
 )
