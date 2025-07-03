@@ -27,7 +27,7 @@ class Mongodbconnection:
         database = db_client[self.database_name]
         return database
 
-    def create_collection(self, collection_name: str=None):
+    def create_collection(self, collection_name=None):
         database = self.create_database()
         collection = database[collection_name]
         return collection
