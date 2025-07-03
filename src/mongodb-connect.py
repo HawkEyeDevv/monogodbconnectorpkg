@@ -29,6 +29,8 @@ class Mongodbconnection:
 
     def create_collection(self, collection_name=None):
         database = self.create_database()
+        if collection_name is None:
+            return database[self.collection_name]
         collection = database[collection_name]
         return collection
 
